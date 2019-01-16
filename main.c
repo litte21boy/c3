@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int index=0;
+int index = 0;
 char arr[1024];
 int main()
 {
 
-    int code=0;
+    int code = 0;
     printf("guanliminganfuxitong\n");
     while (1)
     {
@@ -22,19 +22,32 @@ int main()
         {
             char x;
             printf("qingshuruniyaotianjiademinganzifu\n");
-            scanf("%c",&x);
-            scanf("%c",&x);
-            
-            arr[index]=x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+
+            arr[index] = x;
             index++;
             printf("tianjiachenggong,dianjihuichejixu\n");
             char a;
-            scanf("%c",&a);
-            scanf("%c",&a);
-            
+            scanf("%c", &a);
+            scanf("%c", &a);
         }
         if (code == 2)
         {
+            char x;
+            printf("shanchu\n");
+            if (index > 0)
+            {
+                index--;
+                printf("shanchuchenggong,dianjihuichejixu\n");
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
+            else {
+                printf("shanchushibai,dianjihichejixu\n");
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
         }
         if (code == 3)
         {
